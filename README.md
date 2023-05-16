@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/officialMKL/interactive-rating-component)
-- Live Site URL: [Live-Site](https://frontendmentor.officialmkl.de/interactive-rating-component)
+- Live Site URL: [Live-Site](https://officialmkl.de/frontendmentor/interactive-rating-component)
 
 ## My process
 
