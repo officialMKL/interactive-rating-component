@@ -20,6 +20,7 @@ metadata:
     {{- include "irc-chart.labels" . | nindent 4 }}
   {{- with .Values.ingress.annotations }}
   annotations:
+    dev.okteto.com/generate-host: "true"
     {{- toYaml . | nindent 4 }}
   {{- end }}
 spec:
@@ -38,8 +39,7 @@ spec:
   {{- end }}
   rules:
     {{- range .Values.ingress.hosts }}
-    - host: {{ .host | quote }}
-      http:
+    - http:
         paths:
           {{- range .paths }}
           - path: {{ .path }}
