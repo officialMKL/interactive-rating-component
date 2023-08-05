@@ -20,7 +20,6 @@ metadata:
     {{- include "irc-chart.labels" . | nindent 4 }}
   {{- with .Values.ingress.annotations }}
   annotations:
-    dev.okteto.com/generate-host: "true"
     {{- toYaml . | nindent 4 }}
   {{- end }}
 spec:
