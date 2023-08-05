@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: nginx
+  repository: registry.cloud.okteto.net/officialmkl/interactive-rating-component
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: 'okteto'
+  tag: 'latest'
 
 imagePullSecrets: []
 nameOverride: ''
