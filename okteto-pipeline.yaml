@@ -1,3 +1,6 @@
 icon: https://apps.okteto.com/movies/icon.png
+build:
+  interactive-rating-component:
+    context: .
 deploy:
-  - helm upgrade -i interactive-rating-component irc-chart/
+  - helm upgrade -i interactive-rating-component irc-chart --set image=${OKTETO_BUILD_API_IMAGE}
