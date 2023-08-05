@@ -50,7 +50,7 @@ ingress:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: interactive-rating-component.officialmkl.cloud.okteto.net
+    - host: interactive-rating-component-officialmkl.cloud.okteto.net
       paths:
         - path: /
           pathType: ImplementationSpecific
